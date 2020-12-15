@@ -1,0 +1,29 @@
+module aocs
+
+imports
+  
+  completion/completion
+  pp
+  outline
+  analysis
+  src-gen/signatures/aocs-sig
+
+rules // Debugging
+  
+  debug-show-aterm:
+    (node, _, _, path, project-path) -> (filename, result)
+    with
+      filename := <guarantee-extension(|"aterm")> path
+    ; result   := node
+    
+p1 = 
+	occurrences({ 
+		(Line(Nat(n1),Nat(n2),Char(cs),Pwd(pwd)) -> (n1, n2, cs, pwd));
+		(string-to-int, string-to-int, (explode-string; index(|1)), explode-string);
+		?(v1, v2, c, <occurrences(?c)>);
+		where(<geq> (<id>, v1));
+		where(<leq> (<id>, v2))
+	})	
+
+e-p1:  
+	(node, _, _, _, _) -> <p1; debug(!"Res:")> node

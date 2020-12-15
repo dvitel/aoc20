@@ -1,0 +1,28 @@
+module aocs
+
+lexical syntax 
+
+NUM = [1-9][0-9]+
+NAT = [0-9] | NUM 
+CHAR = [a-zA-Z0-9]
+PWD = [a-zA-Z0-9]+
+EOF = 
+LAYOUT         = [\ \t\n\r]
+//E = [\.]
+//T = [\#]
+
+context-free start-symbols
+  
+  Start
+
+context-free syntax
+  
+  Start.Lines = Line*
+  Nat.Nat = NAT  
+  Char.Char = CHAR
+  Pwd.Pwd = PWD
+  Line.Line = Nat "-" Nat " " Char ": " Pwd
+//  Cell.Empty = E 
+//  Cell.Tree = T 
+//  Slope.Slope = 
+   
