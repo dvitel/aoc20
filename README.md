@@ -1,5 +1,5 @@
 # aoc20
-[Advent of Code](https://adventofcode.com/) 2020 solutions are mostly written on [Rascal MPL](https://www.rascal-mpl.org/).
+[Advent of Code](https://adventofcode.com/) 2020 solutions are mostly written on [Rascal MPL](https://www.rascal-mpl.org/), Haskell, F# and C.
 
 ### Day 1
 F# solution 
@@ -20,3 +20,7 @@ Turtle graphics
 
 ### Day 15 
 C solution for faster search 
+
+### Day 19 
+Rascal: regex conversion of given rules to syntax definition   
+Haskell: rules are set of functions
