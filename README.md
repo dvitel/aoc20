@@ -24,3 +24,9 @@ C solution for faster search
 ### Day 19 
 Rascal: regex conversion of given rules to syntax definition   
 Haskell: rules are set of functions
+
+### Day 20 
+Manipulating pictures in a form of rings 
+
+### Day 21
+Rascal and [Z3](https://github.com/Z3Prover/z3) solution - see generated d21.z3 file and result of run in d21.z3.res
